@@ -1,0 +1,21 @@
+<!-- // views/users/update.ejs -->
+<html>
+  <head>
+    <title>Users | Update</title>
+  </head>
+  <body>
+    <form method="POST" action="/users/update/<%= user.id %>">
+      <label for="username">Username</label>
+      <br>
+      <input type="string" name="username” value="<%= user.username %>"/>
+      <br>
+
+      <label for="password">Password</label>
+      <br>
+      <input type="string" name="password" value="<%= user.password %>"/>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

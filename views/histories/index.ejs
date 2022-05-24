@@ -1,0 +1,15 @@
+<!-- // views/histories/index.ejs -->
+<html>
+  <head>
+    <title>Histories | All</title>
+  </head>
+  <body>
+    <% histories.forEach(i => { %>
+      <div>
+        <h1><%= i.tanggal_main %></h1>
+        <p><%= i.hasil %></p>
+        <a href="/histories/<%= i.id %>">Berhasil!</a>
+      </div>
+    <% }) %>
+  </body>
+</html>

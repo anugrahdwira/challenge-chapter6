@@ -1,0 +1,15 @@
+<!-- // views/biodata/index.ejs -->
+<html>
+  <head>
+    <title>Biodata | All</title>
+  </head>
+  <body>
+    <% biodata.forEach(i => { %>
+      <div>
+        <h1><%= i.tanggal_lahir %></h1>
+        <p><%= i.jenis_kelamin %></p>
+        <a href="/biodata/<%= i.id %>">Berhasil!</a>
+      </div>
+    <% }) %>
+  </body>
+</html>

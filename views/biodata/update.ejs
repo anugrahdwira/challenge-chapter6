@@ -1,0 +1,21 @@
+<!-- // views/biodata/update.ejs -->
+<html>
+  <head>
+    <title>Biodata | Update</title>
+  </head>
+  <body>
+    <form method="POST" action="/biodata/update/<%= biodata.id %>">
+      <label for="tanggal_lahir">tanggal_lahir</label>
+      <br>
+      <input type="string" name="tanggal_lahir” value="<%= biodata.tanggal_lahir %>"/>
+      <br>
+
+      <label for="jenis_kelamin">jenis_kelamin</label>
+      <br>
+      <input type="string" name="jenis_kelamin" value="<%= biodata.jenis_kelamin %>"/>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
